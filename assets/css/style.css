@@ -63,6 +63,7 @@
 /* intro video in header */
 #intro-vid .intro-vid {
     width: 100%;
+    min-height: 500px;
     aspect-ratio: 16 / 9;
 }
 
@@ -105,13 +106,8 @@ padding-top: 4rem; /* prevent navbar overlap */
 
 #useful-links-table {
 
-    /* useful links table font size small enough that 
-
-      the table doesn't overflow on xs screens. 
-
-      Size set back to 1rem in a media query 
-
-      for sm screens and up */
+    /* useful links table font size small enough that the table doesn't overflow on xs screens. 
+    Size set back to 1rem in a media query for sm screens and up */
 
     font-size: 0.6rem;
     display: flex;
