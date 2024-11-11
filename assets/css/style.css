@@ -96,6 +96,75 @@
     background-color: var(--primary-color);
 }
 
+
+#services {
+    background-color: #f4f4f4;
+    /* Example background color */
+    color: #333;
+    /* Example text color */
+    padding: 20px;
+    /* Example padding */
+    margin: 20px 0;
+    /* Example margin */
+    border: 1px solid #ddd;
+    /* Example border */
+    display: flex;
+    flex-direction: column;
+    /* Stack items in a column by default (mobile first) */
+    align-items: center;
+    /* Center items horizontally */
+}
+
+#services h2 {
+    font-size: 2rem;
+    /* Example font size for headings */
+    margin-bottom: 10px;
+    /* Example margin below headings */
+}
+
+#services p {
+    font-size: 1rem;
+    /* Example font size for paragraphs */
+    line-height: 1.5;
+    /* Example line height for paragraphs */
+    margin-bottom: 10px;
+    /* Example margin below paragraphs */
+}
+
+#services .service-item {
+    margin-bottom: 20px;
+    /* Example margin below each service item */
+    padding: 10px;
+    /* Example padding for each service item */
+    border: 1px solid #ccc;
+    /* Example border for each service item */
+    border-radius: 5px;
+    /* Example border radius for each service item */
+    background-color: #fff;
+    /* Example background color for each service item */
+    width: 100%;
+    /* Ensure each item takes full width on smaller screens */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    #services {
+        flex-direction: row;
+        /* Align items in a row on larger screens */
+        flex-wrap: wrap;
+        /* Wrap items to the next row if needed */
+        justify-content: space-between;
+        /* Distribute space between items */
+    }
+
+    #services .service-item {
+        width: calc(33.333% - 20px);
+        /* Each item takes up 1/3 of the width with space */
+        margin-bottom: 0;
+        /* Remove bottom margin for row layout */
+    }
+}
+
 /* Global styles */
 
 
@@ -141,7 +210,7 @@ h2 {
     display: flex;
     align-self: stretched;
 }
- 
+
 /* Footer */
 
 #footer {
