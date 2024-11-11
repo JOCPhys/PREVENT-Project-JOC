@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
+
 <!-- Header with VIDEO -->
 <header id="header" class="container">
     <div class="row" class="col-12 col-lg-6 text-center text-xl-start">
@@ -46,9 +47,42 @@
 
 <body>
 
+    <!-- classes on body set to work with mt-auto on footer to 
+    ensure it always stays at the bottom of the page -->
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#footer">Useful links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Report a Concern Form</a>
+                    </li>
+                    
+                        <a href="Report-a-concern-form.html" class="btn custom-button-filled ms-lg-3" aria-current="page">Report a concern</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Footer with table section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
-    <footer id="useful-links" class="mt-auto">
+    <footer id="footer" class="mt-auto">
         <div class="container section">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
