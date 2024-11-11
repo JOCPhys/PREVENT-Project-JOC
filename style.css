@@ -11,14 +11,59 @@
     --highlight-color-light: #7a9fc2; /* light blue */
 }
 
+/* CSS for Button from Beautiful Buttons */
+.button-44 {
+    background: #e62143;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 33.4929px;
+    padding: .8em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+    text-underline-offset: 1px;
+    transition: all .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    word-break: break-word;
+    border: 0;
+  }
+  
+  .button-44:active,
+  .button-44:focus {
+    border-bottom-style: none;
+    border-color: #dadada;
+    box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+    outline: 0;
+  }
+  
+  .button-44:hover {
+    border-bottom-style: none;
+    border-color: #dadada;
+  }
+  
+
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
+
 
 /* intro video in header */
 #intro-vid .intro-vid {
     width: 100%;
     aspect-ratio: 16 / 9;
-    display: flex;
-    justify-content: center;
-    margin-right: 5%;
 }
 
 /* Global styles */
@@ -63,4 +108,6 @@ padding-top: 4rem; /* prevent navbar overlap */
       for sm screens and up */
 
     font-size: 0.7rem;
+    display: flex;
+    align-self; stretched;
 }
