@@ -5,7 +5,7 @@
 :root {
     --primary-font: "Dongle", sans-serif;
     --secondary-font: "Nunito", cursive;
-    --primary-color: #2c2336;
+    --primary-color: #282336;
     /* dark blue */
     --secondary-color: #f79a4d;
     /* peach */
@@ -20,7 +20,7 @@
     background: var(--secondary-color);
     border-radius: 11px;
     box-sizing: border-box;
-    color: #fff;
+    color: black;
     cursor: pointer;
     display: flex;
     font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
@@ -59,26 +59,28 @@
 
 /* Header */
 
-#header { 
- 
-    color: var(--primary-color); 
+#header {
+    color: var(--primary-color);
     width: 100%;
-    padding: 60px; 
-    text-align: center; 
+    padding: 60px;
+    text-align: center;
     box-shadow: 0 2px 2px 7a9fc2;
 }
 
 #header .lead {
     font-family: var(--secondary-font);
 }
+
+
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../assets/images/Hero image")
+    background: url("../assets/images/Hero-image")
 }
-.hero-image { 
-    width: 100%; 
-    height: auto; 
+
+.hero-image {
+    width: 100%;
+    height: auto;
 }
 
 /* intro video in header */
@@ -91,7 +93,7 @@
 /* Navbar */
 
 #navbar {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /* Global styles */
@@ -137,15 +139,56 @@ h2 {
 
     font-size: 0.6rem;
     display: flex;
-    align-self; stretched;
+    align-self: stretched;
+}
+ 
+/* Footer */
+
+#footer {
+    background-color: #2c2336;
+    color: var(--highlight-color);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line if needed */
 }
 
-/* Footer / useful-links */
+#footer .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px 0;
+    /* Adjust padding above the icons */
+}
 
-#footer { background-color: #2c2336; 
-    color: #7a9fc2; 
-    padding: 10px; 
-    text-align: center; }
+#footer .icon-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* Ensure the icons span the full width */
+}
+
+#footer .social-links i {
+    color: var(--secondary-color);
+    font-size: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    /* Adjust horizontal spacing between icons */
+    transition: color 0.3s ease-in-out;
+}
+
+#footer .social-links i:hover {
+    color: var(--highlight-color-light);
+}
+
+/* useful-links Table main index.html*/
 
 #useful-links {
     background-color: var(--secondary-color);
@@ -217,15 +260,4 @@ button {
 button:hover {
     background-color: #3A1C71;
     color: #FDBB2D;
-}
-#social-links .social-links i {
-    color: var(--primary-color);
-    font-size: 1.9rem;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
-}
-
-#social-links.social-links i:hover {
-    color: var(--secondary-color);
 }
