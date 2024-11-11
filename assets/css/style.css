@@ -17,7 +17,7 @@
 
 /* CSS for Button from Beautiful Buttons */
 .button-44 {
-    background: #e62143;
+    background: var(--secondary-color);
     border-radius: 11px;
     box-sizing: border-box;
     color: #fff;
@@ -59,10 +59,27 @@
 
 /* Header */
 
+#header { 
+ 
+    color: var(--primary-color); 
+    width: 100%;
+    padding: 60px; 
+    text-align: center; 
+    box-shadow: 0 2px 2px 7a9fc2;
+}
+
 #header .lead {
     font-family: var(--secondary-font);
 }
-
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../assets/images/Hero image")
+}
+.hero-image { 
+    width: 100%; 
+    height: auto; 
+}
 
 /* intro video in header */
 #intro-vid .intro-vid {
@@ -79,6 +96,8 @@
 
 /* Global styles */
 
+
+
 body {
     font-family: var(--primary-font);
     padding-top: 57.15px;
@@ -89,7 +108,7 @@ h1,
 h2,
 h3 {
     font-family: var(--secondary-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -122,6 +141,11 @@ h2 {
 }
 
 /* Footer / useful-links */
+
+#footer { background-color: #2c2336; 
+    color: #7a9fc2; 
+    padding: 10px; 
+    text-align: center; }
 
 #useful-links {
     background-color: var(--secondary-color);
