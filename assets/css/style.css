@@ -112,16 +112,15 @@ h2 {
 
 #useful-links-table {
 
-    /* useful links table font size small enough that the table doesn't overflow on xs screens. 
+    /* useful-links table font size small enough that the table doesn't overflow on xs screens. 
     Size set back to 1rem in a media query for sm screens and up */
 
     font-size: 0.6rem;
     display: flex;
-    align-self;
-    stretched;
+    align-self; stretched;
 }
 
-/* Footer / useful links */
+/* Footer / useful-links */
 
 #useful-links {
     background-color: var(--secondary-color);
@@ -143,7 +142,7 @@ h2 {
     margin-right: 15px;
 }
 
-#useful-links .social-links i {
+#useful-links .useful-links i {
     color: var(--primary-color);
     font-size: 1.9rem;
     -webkit-transition: color 0.3s ease-in-out;
@@ -151,11 +150,11 @@ h2 {
     transition: color 0.3s ease-in-out;
 }
 
-#useful-links.social-links i:hover {
+#useful-links .useful-links i:hover {
     color: var(--secondary-color);
 }
 
-#useful-links .table-bordered * {
+.table-bordered * {
     background-color: white;
 }
 
@@ -193,4 +192,15 @@ button {
 button:hover {
     background-color: #3A1C71;
     color: #FDBB2D;
+}
+#social-links .social-links i {
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#social-links.social-links i:hover {
+    color: var(--secondary-color);
 }
