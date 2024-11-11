@@ -66,6 +66,12 @@
     aspect-ratio: 16 / 9;
 }
 
+/* Navbar */
+
+#navbar {
+    background-color: var(--secondary-color);
+}
+
 /* Global styles */
 
 body {
@@ -97,9 +103,9 @@ h2 {
 padding-top: 4rem; /* prevent navbar overlap */
 }
 
-#links-table {
+#useful-links-table {
 
-    /* events table font size small enough that 
+    /* useful links table font size small enough that 
 
       the table doesn't overflow on xs screens. 
 
@@ -107,7 +113,48 @@ padding-top: 4rem; /* prevent navbar overlap */
 
       for sm screens and up */
 
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     display: flex;
     align-self; stretched;
 }
+/* Footer / useful links */
+
+#useful-links {
+    background-color: var(--secondary-color);
+    color: black;
+    padding-bottom: 3rem;
+}
+
+#useful-links
+ h2 {
+    color: black;
+}
+
+#useful-links
+ .sub-heading-color {
+    color: var(--highlight-color);
+}
+
+#useful-links i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#useful-links .social-links i {
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#useful-links.social-links i:hover {
+    color: var(--secondary-color);
+}
+
+#useful-links
+ .table-bordered * {
+    background-color: white;
+}
+
