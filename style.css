@@ -1,0 +1,66 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Nunitof&display=swapfamily=dongle-regular&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: "Dongle", sans-serif;
+    --secondary-font: "Nunito", cursive;
+    --primary-color: #2c2336; /* dark blue */
+    --secondary-color: #f79a4d; /* peach */
+    --highlight-color: #d4674b; /* orange */
+    --highlight-color-light: #7a9fc2; /* light blue */
+}
+
+
+/* intro video in header */
+#intro-vid .intro-vid {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+/* Global styles */
+
+body {
+    font-family: var(--primary-font);
+    padding-top: 57.15px; /* pushes top of header down under fixed navbar */
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+.section {
+padding-top: 4rem; /* prevent navbar overlap */
+}
+
+#links-table {
+
+    /* events table font size small enough that 
+
+      the table doesn't overflow on xs screens. 
+
+      Size set back to 1rem in a media query 
+
+      for sm screens and up */
+
+    font-size: 0.7rem;
+}

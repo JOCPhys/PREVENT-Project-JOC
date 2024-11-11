@@ -57,9 +57,9 @@
                 </div>
 
                 <!--  Training Links table -->
-                <div class="col-12 col-lg-8 col-xl-8 justify-content-center">
+                <div class="col-12 justify-content-center">
                     <h3 class="sub-heading-color text-center">Useful links</h3>
-                    <table class="table table-dark">
+                    <table class="table-sm table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">Who are you?</th>
@@ -67,7 +67,7 @@
                                 <th colspan="3 4">Links to help and support</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-group-divider">
                             <tr>
                                 <th scope="row">Individual </th>
                                 <td scope="row"><a
@@ -151,27 +151,6 @@
     </script>
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
-<!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-<script>
-    document
-        .querySelectorAll(".navbar-collapse .nav-link")
-        .forEach((link) => {
-            link.addEventListener("click", function (e) {
-                let section = document.querySelector(e.target.getAttribute("href"));
-                if (section) {
-                    e.preventDefault(); // Prevent default anchor click behavior
-                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                    window.scroll({
-                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                        behavior: "smooth",
-                    });
-                    document
-                        .querySelector(".navbar-collapse")
-                        .classList.remove("show"); // Collapse navbar
-                }
-            });
-        });
-</script>
 
 </body>
 
