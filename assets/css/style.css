@@ -117,7 +117,7 @@
 
 body {
     font-family: var(--primary-font);
-    padding-top: 120px; /* pushes top of header down under fixed navbar */
+    padding-top: 60px; /* pushes top of header down under fixed navbar */
 }
 
 h1,
@@ -335,6 +335,7 @@ button:hover {
 /* Media query for larger screens */
 @media (min-width: 768px) {
     #services {
+        max-width: 750px;
         display: flex;
         flex-direction: row;   /* Align items in a row on larger screens */
         flex-wrap: wrap;        /* Wrap items to the next row if needed */
@@ -348,7 +349,9 @@ button:hover {
     }
 
     .row {
+        max-width: 750px;
         display: flex;        
         flex-direction: row;
+        justify-content: space-between;
     }
 }

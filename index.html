@@ -39,7 +39,7 @@
             </p>
             </div>
 
-            <div class="col-12 col-lg-6 media-xl-justify-content-flex-end">
+            <div class="col-12 col-lg-6 media-xl">
                 <iframe id="intro-vid" class="container" src="https://www.youtube.com/embed/Otc2eaRY32s"
                     title="Prevent: An Introduction" allow="accelerometer 
                     clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -109,15 +109,15 @@
                 <!-- Navigation -->
                 <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
                     <div class="container"> <a class="navbar-brand" href="index.html"> <img
-                                src="./assets/images/favicon.ico" alt="Holding Hands icon" class="logo"> </a> <button
+                                src="assets/images/favicon.ico" alt="Holding Hands icon" class="logo"> </a> <button
                             class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
                                 class="navbar-toggler-icon"></span> </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="">Useful links</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="./form.html">Report a concern</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="index.html#useful-links">Useful links</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="form.html">Report a concern</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -231,6 +231,22 @@
         </script>
         <!-- Font Awesome kit -->
         <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
+        <!-- Javascript file for collapsing navbar selector-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                var navbarToggler = document.querySelector('.navbar-toggler');
+                var navbarCollapse = document.querySelector('.navbar-collapse');
+            
+                navLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                            navbarCollapse.classList.remove('show');
+                        }
+                    });
+                });
+            });
+            </script>
     </body>
 </html>
 
