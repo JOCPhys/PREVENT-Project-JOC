@@ -4,7 +4,7 @@
 /* CSS Variables */
 :root {
     --primary-font: "Dongle", sans-serif;
-    --secondary-font: "Nunito", cursive;
+    --secondary-font: "Nunito", sans-serif;
     --primary-color: #573ba4;
     /* dark blue */
     --secondary-color: #f79a4d;
@@ -16,21 +16,19 @@
 }
 
 
-/* CSS for Button from Beautiful Buttons */
+/* CSS for Button from Beautiful Buttons - JOC adaptions noted */
 .button-44 {
-    background: var(--secondary-color);
+    background: var(--secondary-color); /*adapted to chosen colours */
     border-radius: 11px;
     box-sizing: border-box;
     color: var(--primary-color);
     cursor: pointer;
-    display: inline-flex;
-    /* Changed to inline-flex for the <a> tag */
-    font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+    display: inline-flex; /* Changed to inline-flex for the <a> tag */
+    font-family: Dongle, Nunito, sans-serif; /* adapted to fit chosen font*/
     font-size: 1.15em;
     font-weight: 700;
     justify-content: center;
-    align-items: center;
-    /* Center align text vertically */
+    align-items: center; /* Center align text vertically */
     line-height: 33.4929px;
     padding: .8em 1em;
     text-align: center;
@@ -40,12 +38,8 @@
     text-underline-offset: 1px;
     transition: all .2s ease-in-out;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     width: 100%;
-    /* Ensure full width */
-    word-break: break-word;
-    border: 0;
 }
 
 .button-44:active,
@@ -91,7 +85,7 @@
 /* intro video in header */
 #intro-vid .intro-vid {
     width: 100%;
-    min-height: 500px;
+    min-height: 100%;
     aspect-ratio: 16 / 9;
 }
 
@@ -168,11 +162,38 @@
         margin-bottom: 0;
         /* Remove bottom margin for row layout */
     }
+
+    .row {
+        display: flex;
+        /* Added display: flex; */
+        flex-direction: row;
+        /* Added flex-direction: row; */
+    }
 }
 
+/*  CSS for footer image here */
+.footer-image {
+    max-width: 100px;
+    /* Adjust the value as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Ensure the image is displayed as a block element */
+    margin: 0 auto;
+}
+
+/* Center the image horizontally */
 /* Global styles */
 
-
+/* Add the new CSS for card images here */
+.card-img-top {
+max-width: 100%;
+    /* Ensure the image scales with the card's width */
+max-height: 200px;
+    /* Set a maximum height for the image */
+obect-fit: cover;
+    /* Maintain aspect ratio and cover the area */
+}
 
 body {
     font-family: var(--primary-font);
@@ -268,6 +289,10 @@ h2 {
     background-color: var(--secondary-color);
     color: black;
     padding-bottom: 3rem;
+
+}
+.useful-links a {
+    text-decoration: none;
 }
 
 #useful-links h2 {
@@ -287,8 +312,6 @@ h2 {
 #useful-links .useful-links i {
     color: var(--primary-color);
     font-size: 1.9rem;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
