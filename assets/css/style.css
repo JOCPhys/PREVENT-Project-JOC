@@ -106,7 +106,7 @@
     color: var(--primary-color);
     width: 100%;
     text-align: center;
-    box-shadow: 0 2px 2px 7a9fc2;
+    box-shadow: 0 2px 2px #7a9fc2;
 }
 
 #header .lead {
@@ -152,7 +152,6 @@ h2 {
 
     font-size: 0.6rem;
     display: flex;
-    align-self: stretched;
 }
 
 /* useful-links Table main index.html*/
@@ -218,7 +217,6 @@ h2 {
     align-items: center;
     text-align: center;
     padding-top: 40px 0;
-
 }
 
 #footer .icon-wrapper {
