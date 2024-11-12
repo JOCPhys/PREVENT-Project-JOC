@@ -21,7 +21,7 @@
     background: var(--secondary-color);
     border-radius: 11px;
     box-sizing: border-box;
-    color: black;
+    color: var(--primary-color);
     cursor: pointer;
     display: inline-flex;
     /* Changed to inline-flex for the <a> tag */
