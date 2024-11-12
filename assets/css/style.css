@@ -134,6 +134,7 @@
     #services .service-item {
         width: calc(33.333% - 20px);  /* Each item takes up 1/3 of the width with space */
         margin-bottom: 0;    /* Remove bottom margin for row layout */
+        padding-left: 0;
     }
 
     .row {
@@ -200,7 +201,7 @@ h2 {
     align-self: stretched;
 }
 
-* useful-links Table main index.html*/
+/* useful-links Table main index.html*/
 
 #useful-links {
     background-color: var(--secondary-color);
@@ -253,6 +254,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #footer .social-links {
@@ -369,6 +371,6 @@ button:hover {
     #services .service-item {
         margin: 20px;  /* spacing between items */
         width: calc(33.33% - 20px);
-        
+
     }
 }
