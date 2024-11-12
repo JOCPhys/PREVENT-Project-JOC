@@ -1,6 +1,13 @@
 /* Google fonts import link */
 @import url('https://fonts.googleapis.com/css2?family=Nunitof&display=swapfamily=dongle-regular&display=swap');
 
+/* asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* CSS Variables */
 :root {
     --primary-font: "Dongle", sans-serif;
@@ -57,16 +64,17 @@
 #header {
     color: var(--primary-color);
     width: 100%;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 2px 2px 7a9fc2;
 }
 
 #header .lead {
     font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
 
-
+/*
 #hero {
     height: 600px;
     width: 100%;
@@ -77,6 +85,7 @@
     width: 100%;
     height: auto;
 }
+*/ 
 
 /* intro video in header */
 #intro-vid .intro-vid {
@@ -146,20 +155,16 @@
 /*  CSS for footer image here */
 .footer-image {
     max-width: 100px;
-    height: auto:auto;    /* Maintain the aspect ratio */
+    height: auto;    /* Maintain the aspect ratio */
     display: block;   /*  the image is displayed as a block element */
     margin: 0 auto;
+
 }
 
 /* Center the image horizontally */
 /* Global styles */
 
-/*  CSS for card images here */
-.card-img-top {
-max-width: 100%;    /* Ensure the image scales with the card's width */
-max-height: 200px;    /* maximum height for the image */
-obect-fit: cover;    /* Maintain aspect ratio and cover the area */
-}
+
 
 body {
     font-family: var(--primary-font);
@@ -255,6 +260,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    flex-shrink: 0;
 }
 
 #footer .social-links {
@@ -348,7 +354,13 @@ button:hover {
     flex-direction: column;
     justify-content: space-between; /* Ensure the content and footer are spaced */
 }
-
+/*  CSS for card images here */
+.card-img-top {
+    max-width: 100%;    /* Ensure the image scales with the card's width */
+    max-height: 200px;    /* maximum height for the image */
+    object-fit: cover;    /* Maintain aspect ratio and cover the area */
+    }
+    
 /* Card-specific styles */
 #services .card {
     display: flex;
