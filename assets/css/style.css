@@ -26,7 +26,7 @@
     box-sizing: border-box;
     color: var(--primary-color);
     cursor: pointer;
-    display: inline-flex; /* Changed to inline-flex for the <a> tag */
+  /*  display: inline-flex; /* Changed to inline-flex for the <a> tag */
     font-family: Dongle, Nunito, sans-serif; /* adapted to fit chosen font*/
     font-size: 1.15em;
     font-weight: 700;
@@ -42,7 +42,7 @@
     transition: all .2s ease-in-out;
     user-select: none;
     touch-action: manipulation;
-    width: 100%;
+
 }
 
 .button-44:active,
@@ -75,8 +75,8 @@
 
 /* intro video in header */
 #intro-vid .intro-vid {
-    width: 100%;
-    min-height: 100%;
+ /*   width: 100%;
+    min-height: 100%; */
     aspect-ratio: 16 / 9;
 }
 
@@ -137,6 +137,10 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.h3 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 .sub-heading-color {
     color: var(--highlight-color);
 }
