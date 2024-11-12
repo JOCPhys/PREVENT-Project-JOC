@@ -5,7 +5,7 @@
 :root {
     --primary-font: "Dongle", sans-serif;
     --secondary-font: "Nunito", cursive;
-    --primary-color: #282336;
+    --primary-color: #573ba4;
     /* dark blue */
     --secondary-color: #f79a4d;
     /* peach */
@@ -15,6 +15,7 @@
     /* light blue */
 }
 
+
 /* CSS for Button from Beautiful Buttons */
 .button-44 {
     background: var(--secondary-color);
@@ -22,11 +23,14 @@
     box-sizing: border-box;
     color: black;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
+    /* Changed to inline-flex for the <a> tag */
     font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
     font-size: 1.15em;
     font-weight: 700;
     justify-content: center;
+    align-items: center;
+    /* Center align text vertically */
     line-height: 33.4929px;
     padding: .8em 1em;
     text-align: center;
@@ -39,6 +43,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 100%;
+    /* Ensure full width */
     word-break: break-word;
     border: 0;
 }
@@ -214,7 +219,7 @@ h2 {
 /* Footer */
 
 #footer {
-    background-color: #2c2336;
+    background-color: var(--primary-color);
     color: var(--highlight-color);
     padding: 20px 0;
     text-align: center;
@@ -361,7 +366,26 @@ button:hover {
     /* Full width on mobile */
     box-sizing: border-box;
     /* Include padding and border in width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure the content and footer are spaced */
 }
+
+/* Card-specific styles */
+#services .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Ensure the card takes up the full height of the container */
+}
+
+#services .card-body {
+    flex-grow: 1;
+    /* Allow the body to take up remaining space */
+}
+
+
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
@@ -377,7 +401,7 @@ button:hover {
     #services .service-item {
         width: calc(33.333% - 20px);
         /* Each item takes up 1/3 of the width with spacing */
-        margin: 10px;
-        /* Adjust margin for spacing between items */
+        margin: 20px;
+        /* spacing between items */
     }
 }
