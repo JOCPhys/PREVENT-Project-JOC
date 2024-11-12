@@ -93,6 +93,7 @@
 
 #navbar {
     background-color: var(--primary-color);
+
 }
 
 
@@ -237,53 +238,7 @@ h2 {
     align-self: stretched;
 }
 
-/* Footer */
-
-#footer {
-    background-color: var(--primary-color);
-    color: var(--highlight-color);
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* Allows items to wrap to the next line if needed */
-}
-
-#footer .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 40px 0;
-    /* Adjust padding above the icons */
-}
-
-#footer .icon-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    /* Ensure the icons span the full width */
-}
-
-#footer .social-links i {
-    color: var(--secondary-color);
-    font-size: 1.9rem;
-    text-align: center;
-    text-decoration: none;
-    margin: 0 10px;
-    /* Adjust horizontal spacing between icons */
-    transition: color 0.3s ease-in-out;
-}
-
-#footer .social-links i:hover {
-    color: var(--highlight-color-light);
-}
-
-/* useful-links Table main index.html*/
+* useful-links Table main index.html*/
 
 #useful-links {
     background-color: var(--secondary-color);
@@ -322,6 +277,52 @@ h2 {
 .table-bordered * {
     background-color: white;
 }
+
+/* Footer */
+
+#footer {
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#footer .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px 0;
+
+}
+
+#footer .icon-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#footer .social-links i {
+    color: var(--secondary-color);
+    font-size: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    margin: 0 10px;   /* Adjust horizontal spacing between icons */
+    transition: color 0.3s ease-in-out;
+}
+
+#footer .social-links i:hover {
+    color: var(--highlight-color-light);
+}
+
+
 
 /* Report-a-concern form */
 body {
@@ -363,52 +364,37 @@ button:hover {
 
 #services {
     display: flex;
-    flex-direction: column;
-    /* Stack items in a column by default (mobile first) */
+    flex-direction: column; /* Stack items in a column by default (mobile first) */
     align-items: center;
     padding: 20px;
     background-color: #f4f4f4;
-    /* Example background color */
     color: #333;
-    /* Example text color */
     border: 1px solid #ddd;
-    /* Example border */
 }
 
 #services .service-item {
     background-color: #fff;
-    /* Example background color for each service item */
     border: 1px solid #ccc;
-    /* Example border for each service item */
     border-radius: 5px;
-    /* Example border radius for each service item */
     padding: 20px;
     margin: 10px 0;
-    /* Example margin for each service item */
-    width: 100%;
-    /* Full width on mobile */
-    box-sizing: border-box;
-    /* Include padding and border in width */
+    width: 100%; /* Full width on mobile */
+    box-sizing: border-box;/* Include padding and border in width */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* Ensure the content and footer are spaced */
+    justify-content: space-between; /* Ensure the content and footer are spaced */
 }
 
 /* Card-specific styles */
 #services .card {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    /* Ensure the card takes up the full height of the container */
+    height: 100%; /* Ensures the card takes up the full height of the container */
 }
 
 #services .card-body {
-    flex-grow: 1;
-    /* Allow the body to take up remaining space */
+    flex-grow: 1; /* Allow the body to take up remaining space */
 }
-
-
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
