@@ -116,6 +116,7 @@
     width: 100%;
     text-align: center;
     box-shadow: 0 2px 2px #7a9fc2;
+    margin-top: 100px;
 }
 
 #header .lead {
@@ -176,7 +177,7 @@ h2 {
     background-color: var(--secondary-color);
     color: black;
     padding-bottom: 3rem;
-
+    width: 100%;
 }
 
 #useful-links a {
@@ -338,7 +339,6 @@ button:hover {
     margin-bottom: 20px;
     padding: 10px;
     margin: 10px 0;
-    width: 100%;
     /* each item takes full width on smaller screens */
     box-sizing: border-box;
     /* Include padding and border in width */
@@ -368,7 +368,7 @@ button:hover {
 }
 
 /* Media query for larger screens */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     #services {
         max-width: 750px;
         display: flex;

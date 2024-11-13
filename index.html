@@ -19,32 +19,55 @@
     </head>
 
     <body class="d-flex flex-column min-vh-100">
+        <header>
+            <!-- Navigation -->
+            <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+                <div class="container"> <a class="navbar-brand" href="index.html"> <img
+                            src="assets/images/favicon.ico" alt="Holding Hands icon" class="logo"> </a> <button
+                        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                            class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="index.html#useful-links">Useful links</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="form.html">Report a concern</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+        </header>
+
         <!-- Header with VIDEO -->
-        <header id="header" class="container">
+        <section id="header" class="container">
 
             <h1 id="logo" class="display-3"><strong>Help to PREVENT Hate</strong></h1>
-            <div class="row col-12 col-lg-6 text-center text-xl-start">
+            <div class="row">
+                <div class="row col-12 col-lg-6 text-center text-xl-start">
 
-                <p class="lead display-6"> </p>
-                <p class="my-6">Do <strong>YOU</strong> want to PREVENT <strong>hate speech</strong> in our on-line
-                    and local communities?</p>
-                <p class="my-4">Can <strong>YOU</strong> help to PREVENT <strong>radicalisation</strong> of our
-                    vulnerable
-                    citizens?</p>
-                <p class="my-4">How <strong>YOU</strong> can help PREVENT <strong>terrorism</strong> in our country</p>
-                <p class="my-4"> 
-                    <a href="./form.html" class="button-44" role="button">
-                    <strong>REPORT A CONCERN: Click here</strong>
-                </a> 
-            </p>
+                    <p class="lead display-6"> </p>
+                    <p class="my-6">Do <strong>YOU</strong> want to PREVENT <strong>hate speech</strong> in our on-line
+                        and local communities?</p>
+                    <p class="my-4">Can <strong>YOU</strong> help to PREVENT <strong>radicalisation</strong> of our
+                        vulnerable
+                        citizens?</p>
+                    <p class="my-4">How <strong>YOU</strong> can help PREVENT <strong>terrorism</strong> in our country</p>
+                    <p class="my-4"> 
+                        <a href="./form.html" class="button-44" role="button">
+                        <strong>REPORT A CONCERN: Click here</strong>
+                    </a> 
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6  media-xl">
+                    <iframe id="intro-vid" class="container" src="https://www.youtube.com/embed/Otc2eaRY32s"
+                        title="Prevent: An Introduction" allow="accelerometer 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
+           
 
-            <div class="col-12 col-lg-6  media-xl">
-                <iframe id="intro-vid" class="container" src="https://www.youtube.com/embed/Otc2eaRY32s"
-                    title="Prevent: An Introduction" allow="accelerometer 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            
             <div class="my-4 text-center d-lg-none"> <!-- 'd-lg-none' will hide button once large screen width of 992px is met -->
                 <a href="./form.html" class="button-44" role="button">
                 <strong>REPORT A CONCERN: Click here</strong>
@@ -124,23 +147,6 @@
             <!-- classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
         
             <section>
-                
-                <!-- Navigation -->
-                <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
-                    <div class="container"> <a class="navbar-brand" href="index.html"> <img
-                                src="assets/images/favicon.ico" alt="Holding Hands icon" class="logo"> </a> <button
-                            class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
-                                class="navbar-toggler-icon"></span> </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="index.html#useful-links">Useful links</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="form.html">Report a concern</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav> 
                 
                 <!-- Useful-Links table -->
                 <div class="col-12 justify-content-center container-fluid">
