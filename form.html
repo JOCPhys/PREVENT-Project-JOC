@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Prevent strategy, Prevent hate speech, radicalisation, terrorism, signs of radicalisation, 
+    <meta name="description" content="Prevent strategy, Prevent hate speech, radicalisation, terrorism, signs of radicalisation, 
         prevent training for teachers, prevent for parents, prevent for persona at risk, support, signposts, 
         report a concern">
     <title>PREVENT | Report a concern</title>
@@ -14,8 +13,7 @@
     <link rel="hands icon" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -29,9 +27,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/favicon.ico" alt="Holding Hands icon" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-            aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -56,119 +53,113 @@
             <div class="col-12 col-md-8 text-center text-xl-start">
 
                 <p class="my-4">
-                    Thank you for helping us combat hate in our country and keep our communities safe. 
-                    Referring someone to PREVENT ensures they get the help they need to keep them and others safe. Getting support from Prevent is not a punishment and won't go on a person's criminal record.
-                    Please fill out the form below with as many details as you can. You can remain anonymous if you prefer.
+                    Thank you for helping us combat hate in our country and keep our communities safe.
+                    Referring someone to PREVENT ensures they get the help they need to keep them and others safe.
+                    Getting support from Prevent is not a punishment and won't go on a person's criminal record.
+                    Please fill out the form below with as many details as you can. You can remain anonymous if you
+                    prefer.
                 </p>
             </div>
         </div>
     </header>
 
+    xml
     <main>
         <!-- Report-a-concern form section -->
         <section id="report-a-concern-form" class="container section">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
-
-                <div class="text-center">
-        
-                    <h2>Report a Concern</h2>
-                </div>
+                    <div class="text-center">
+                        <h2>Report a Concern</h2>
+                    </div>
                     <form action="success.html" method="GET">
                         <div class="row">
                             <div class="col-12 mb-3">
-                                <label for="message" class="form-label"><strong>Tell us about the concern you have /
-                                        what has happened.</strong>
-                                    (What did you see / hear / read?)</label>
-                                <textarea class="form-control" rows="10" id="message" name="message"
-                                    required></textarea>
+                                <label for="message" class="form-label"><strong>Tell us about the concern you have / what has happened.</strong> (What did you see / hear / read?)</label>
+                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
                             </div>
+    
                             <div class="col-12 mb-3">
                                 <label for="evidence"><strong>Do you have any evidence?</strong></label><br> 
-                                <input type="radio" id="yes"name="evidence" value="yes" required>
-                                <label for="yes">Yes</label><br> 
-                                    <input type="radio" id="no" name="evidence" value="no" required>
-                                <label for="no">No</label><br>
-                                <label for="evidence" class="form-label" required><strong>What type of 
-                                    evidence do you have?</strong> Write <em>'no evidence'</em> if there is no evidence.</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+                                <input type="radio" id="evidence-yes" name="evidence" value="yes" required>
+                                <label for="evidence-yes">Yes</label><br> 
+                                <input type="radio" id="evidence-no" name="evidence" value="no">
+                                <label for="evidence-no">No</label><br>
+    
+                                <label for="evidence-type" class="form-label"><strong>What type of evidence do you have?</strong> Write <em>'no evidence'</em> if there is no evidence.</label>
+                                <textarea class="form-control" rows="10" id="evidence-type" name="evidence-type"></textarea>
                             </div>
-                            </div>
+    
                             <div class="col-12 mb-3">
                                 <label for="when"><strong>When did this happen?</strong> (<em>or</em> the first time you became concerned)</label><br>
-                                    <input type="date" id="when" name="when"><br>
-
+                                <input type="date" id="when" name="when"><br>
                             </div>
-
+    
                             <div class="col-12 mb-3">
                                 <label for="isolated"><strong>Is this an isolated event?</strong></label><br> 
-                                    <input type="radio" id="yes" name="isolated" value="yes" required>
-                                <label for="yes"><strong>Yes</strong> - it has happened only once</label><br>
-                                    <input type="radio" id="no" name="isolated" value="no" required>
-                                <label for="no"><strong>No</strong> - it has happened more than once</label><br>
+                                <input type="radio" id="isolated-yes" name="isolated" value="yes" required>
+                                <label for="isolated-yes"><strong>Yes</strong> - it has happened only once</label><br>
+                                <input type="radio" id="isolated-no" name="isolated" value="no">
+                                <label for "isolated-no"><strong>No</strong> - it has happened more than once</label><br>
                             </div>
-
+    
                             <div class="col-12 mb-3">
-                                <label for="message" class="form-label"><strong>Where did this happen?</strong>
-                                    (Name and/or address of location / venue - please also include the location if it was online content
-                                    viewed)</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+                                <label for "location"><strong>Where did this happen?</strong></label>
+                                <textarea class ="form-control", rows ="10", id ="location", name ="location", required></textarea>
                             </div>
-
-                            <div class="col-12 mb-3">
-                                <label for="description"><strong>Do you know the name (and/or role) of the person(s)involved?</strong></label><br>
-                                    <input type="radio" id="yes" name="description" value="yes" required>
-                                <label for="yes"><strong>Yes</strong> - I know the person(s) involved</label><br> 
-                                    <input type="radio" id="no" name="description" value="no" required>
-                                <label for="no"><strong>No</strong> - I can give a description</label><br>
-
-                                <label for="description" class="form-label" required>Write <em>'no description'</em> if you cannot provide
-                                    a description.</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+    
+                            <div class = "col-12 mb-3">
+                                <label for = "description"><strong>Do you know the name (and/or role) of the person(s) involved?</strong></label><br>
+                                <input type = "radio", id = "description-yes", name = "description", value = "yes">
+                                <label for = "description-yes"><strong>Yes</strong> - I know the person(s) involved</label><br> 
+                                <input type = "radio", id = "description-no", name = "description", value = "no">
+                                <label for = "description-no"><strong>No</strong> - I can give a description</label><br>
+    
+                                <!-- Description Textarea -->
+                                <label for ="description-textarea" class ="form-label">Write<em>'no description'</em> if you cannot provide a description.</label>
+                                <textarea class ="form-control", rows ="10", id ="description-textarea", name ="description-textarea"></textarea>
                             </div>
-
-                            <div class="col-12 mb-3">
-                                <label for="message" class="form-label"><strong>Any further details to add?</strong></label>
-                                <textarea class="form-control" rows="6" id="message" name="message"></textarea>
-                            </div>
-                    
-
-                            <div class="col-12 mb-3">
-                                <label for="contact-agreed"><strong>Can we contact you regarding this incident?</strong></label><br>
-                                    <input type="radio" id="yes" name="contact-agreed" value="yes" required>
-                                <label for="yes"><strong>Yes</strong></label><br> 
-                                    <input type="radio" id="no" name="contact-agreed" value="no" required>
-                                <label for="no"><strong>No</strong></label><br>
-
-                            </div>
-
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input class="form-control" id="name" name="name" type="text">
-                            </div>
-
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input class="form-control" id="email" name="email" type="email">
-                            </div>
-
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="phone" class="form-label">Phone number</label>
-                                <input class="form-control" id="phone" name="phone" type="number">
-                            </div>
-                            
-                            <div class="col-12 mb-3">
-                                <label for="contact-method"><strong>Preferred method of contact</strong></label><br>
-                                    <input type="radio" id="yes" name="contact-method" value="yes">
-                                <label for="yes">Telephone</label><br> 
-                                    <input type="radio" id="no" name="contact-method" value="no">
-                                <label for="no">Email</label><br>
-
+    
+                            <!-- Further Details Section -->
+                            <div class = col-12 mb-3 >
+                                <label for ="details"><strong>Any further details to add?</strong></label >
+                                 <textarea  class ="form-control"  rows ="6"id ="details"name ="details"></textarea >
+                              </div >
+    
+                              <!-- Contact Agreement Section -->
+                              <div  class ="col-12 mb-3 ">
+                                <label  for ="contact-agreed"><strong >Can we contact you regarding this incident?</strong></label ><br >
+                                <input  type ="radio"id ="contact-agreed-yes"name ="contact-agreed"value ="yes ">
+                                <label  for ="contact-agreed-yes"><strong >Yes</strong></label ><br > 
+                                <input  type ="radio"id ="contact-agreed-no"name ="contact-agreed"value ="no ">
+                                <label  for ="contact-agreed-no"><strong >No</strong></label ><br >
+                              </div >
+    
+                              <!-- Name Input Section -->
+                              <div  class ="col-12 col-lg-6 mb-3 ">
+                                <label  for ="name">Name</label >
+                                <input  class ="form-control"id ="name"name ="name"type ="text ">
+                              </div >
+    
+                              <!-- Email Input Section -->
+                              <div  class ="col-12 col-lg-6 mb-3 ">
+                                <label  for ="email">Email</label >
+                                <input  class ="form-control"id ="email"name ="email"type ="email ">
+                              </div >
+    
+                              <!-- Phone Input Section -->
+                              <div  class ="col-12 col-lg-6 mb-3 ">
+                                <label  for ="phone">Phone number</label >
+                                <input  class ="form-control"id ="phone"name ="phone"type ="number ">
+                              </div >
+                                <input type radio, id="contact-method-email" name="contact-method" value="email">
+                                <label for="contact-method-email">Email</label><br>
                             </div>
 
 
 
                             <button type="submit">Submit</button>
+                            </div>
                     </form>
                 </div>
             </div>
@@ -197,8 +188,9 @@
                             <a href="https://www.x.com" target="_blank"
                                 aria-label="Visit our X feed (opens in a new tab)" rel="noopener"><i
                                     class="fa-brands fa-x-twitter"></i></a>
-                                    <a href="https://www.youtube.com/watch?v=udRpKAlu-Q8" target="_blank" aria-label="See Prevent UK videos on You-tube (opens in a new tab)"
-                                    rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/watch?v=udRpKAlu-Q8" target="_blank"
+                                aria-label="See Prevent UK videos on You-tube (opens in a new tab)" rel="noopener"><i
+                                    class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>

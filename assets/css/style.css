@@ -65,21 +65,6 @@
     border-color: #dadada;
 }
 
-
-
-/*
-#hero {
-    height: 600px;
-    width: 100%;
-    background: url("../assets/images/Hero-image")
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-}
-*/
-
 /* intro video in header */
 #intro-vid .intro-vid {
     width: 100%;
@@ -270,21 +255,21 @@ select {
     margin: 0.5rem 0;
 }
 
-button {
-    background-color: #FDBB2D;
-    color: #3A1C71;
-    padding: 0.75rem 1.5rem;
-    border: navy;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button a {
-    text-decoration: none;
+.button {
+    display: inline-block; 
+    background-color: #FDBB2D; 
+    color: #3A1C71; 
+    padding: 0.75rem 1.5rem; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-button:hover {
-    background-color: #3A1C71;
-    color: #FDBB2D;
+.button:hover {
+    background-color: #3A1C71; /* Change background color on hover */
+    color: #FDBB2D; /* Change text color on hover */
 }
 
 /* services */
