@@ -12,11 +12,11 @@
 :root {
     --primary-font: "Dongle", sans-serif;
     --secondary-font: "Nunito", sans-serif;
-    --primary-color: #573ba4;
+    --primary-color: #462F83;
     /* dark blue */
-    --secondary-color: #f79a4d;
+    --secondary-color: #F7903B;
     /* peach */
-    --highlight-color: #d4674b;
+    --highlight-color: #F5DCD6;
     /* orange */
     --highlight-color-light: #7a9fc2;
     /* light blue */
@@ -32,7 +32,7 @@
     color: var(--primary-color);
     cursor: pointer;
     /*  display: inline-flex; /* Changed to inline-flex for the <a> tag */
-    font-family: Dongle, Nunito, sans-serif;
+    font-family: Dongle, sans-serif;
     /* adapted to fit chosen font*/
     font-size: 1.15em;
     font-weight: 700;
@@ -82,8 +82,8 @@
 
 /* intro video in header */
 #intro-vid .intro-vid {
-    /*   width: 100%;
-    min-height: 100%; */
+    width: 100%;
+    min-height: 100%; 
     aspect-ratio: 16 / 9;
 }
 
@@ -93,21 +93,6 @@
     background-color: var(--primary-color);
 }
 
-
-
-/*  CSS for footer image here */
-.footer-image {
-    max-width: 100px;
-    height: auto;
-    /* Maintain the aspect ratio */
-    display: block;
-    /*  the image is displayed as a block element */
-    margin: 0 auto;
-
-}
-
-/* Center the image horizontally */
-/* Global styles */
 
 /* Header */
 
@@ -127,8 +112,7 @@
 
 body {
     font-family: var(--primary-font);
-    padding-top: 60px;
-    /* pushes top of header down under fixed navbar */
+    padding-top: 60px;    /* pushes top of header down under fixed navbar */
 }
 
 h1,
@@ -154,18 +138,16 @@ h2 {
 }
 
 .sub-heading-color {
-    color: var(--highlight-color);
+    color: var(--secondary-color);
 }
 
 .section {
-    padding-top: 4rem;
-    /* prevent navbar overlap */
+    padding-top: 4rem;    /* prevent navbar overlap */
 }
 
 #useful-links-table {
 
-    /* useful-links table font size small enough that the table doesn't overflow on xs screens. 
-    Size set back to 1rem in a media query for sm screens and up */
+    /* useful-links table font size small enough that the table doesn't overflow on xs screens. */
 
     font-size: 0.6rem;
     display: flex;
@@ -216,7 +198,7 @@ h2 {
 
 #footer {
     background-color: var(--primary-color);
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     padding: 20px 0;
     text-align: center;
     font-size: 0.9rem;
@@ -249,8 +231,7 @@ h2 {
     text-align: center;
     text-decoration: none;
     padding-top: 20px;
-    margin: 0 10px;
-    /* Adjust horizontal spacing between icons */
+    margin: 0 10px; /* horizontal spacing between icons */
     transition: color 0.3s ease-in-out;
 }
 
@@ -258,7 +239,13 @@ h2 {
     color: var(--highlight-color-light);
 }
 
+.footer-image {
+    max-width: 100px;
+    height: auto;    /* Maintain the aspect ratio */
+    display: block;    /*  the image is displayed as a block element */
+    margin: 0 auto;
 
+}
 
 /* Report-a-concern form */
 body {
@@ -308,12 +295,6 @@ button:hover {
     padding: 20px;
     margin: 20px 0;
     border: 1px solid #ddd;
-    /* Example border */
-    display: flex;
-    flex-direction: column;
-    /* Stack items in a column by default (mobile first) */
-    align-items: center;
-    /* Center items horizontally */
 }
 
 #services h2 {
@@ -338,58 +319,85 @@ button:hover {
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 10px;
-    margin: 10px 0;
-    /* each item takes full width on smaller screens */
-    box-sizing: border-box;
-    /* Include padding and border in width */
+    margin: 10px 0;    /* each item takes full width on smaller screens */
+    box-sizing: border-box;    /* Include padding and border in width */
     display: flex;
-    /*  flex-direction: column; */
-    /*   justify-content: space-between; */
-    /* Ensure the content and footer are spaced */
-}
-
-/*  CSS for card images here */
-.card-img-top {
-    max-width: 100%;     /* Ensure the image scales with the card's width */
-    max-height: 200px;     /* maximum height for the image */
-    object-fit: cover;     /* Maintain aspect ratio and cover the area */
-}
-
-/* Card-specific styles */
-#services .card {
-    /*  display: flex;
     flex-direction: column;
-    height: 100%; */
-    /* Ensures the card takes up the full height of the container */
+    justify-content: space-between;    /* Ensure the content and footer are spaced */
 }
 
-#services .card-body {
-    /*  flex-grow: 1; */     /* Allow the body to take up remaining space */
+#services .row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#services .service-item {
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    #services .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #services .service-item {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+    }
+}
+.card-subheading {
+    font-size: 1.5rem; /* Default size for large screens */
+    transition: font-size 0.3s ease; /* Smooth transition for font size changes */
+}
+
+@media (max-width: 1199px) {
+    .card-subheading {
+        font-size: 1.3rem;
+    }
 }
 
 /* Media query for larger screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #services {
         max-width: 750px;
         display: flex;
         flex-direction: row;        /* Align items in a row on larger screens */
-        flex-wrap: wrap;         /* Wrap items to the next row if needed */
-        justify-content: space-between;         /* Distribute space between items */
-    }
-
+   /*     flex-wrap: wrap;         /* Wrap items to the next row if needed */ */
+    /*    justify-content: space-between;   } */      /* Distribute space between items */    
+/*
     #services .service-item {
         width: calc(33.333% - 20px);        /* Each item takes up 1/3 of the width with space */
-        margin-bottom: 0;        /* Remove bottom margin for row layout */
-        padding-left: 0;
-    }
-
+    /*    margin-bottom: 0;        /* Remove bottom margin for row layout */
+      /*  padding-left: 0;
+    } */
+/*
     .row {
         max-width: 750px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
-}
+} */
 
 /* image button in successmpage */
 .image-button {
