@@ -1,6 +1,7 @@
 HELP TO PREVENT HATE
 __Overview__
-The ‘Help to PREVENT Hate!’ is a website for people to keep our country and communities in the UK safe from those that target vulnerable individuals by spreading hate and negative ideologies and cause fear in our communities. This site is for parents, concerned citizens and professionals working with vulnerable groups who want to keep their communities safe from hate and terrorism. It is for people who want to know more about what the PREVENT strategy is, what to look for and, most importantly, how to report any concerns to the relevant authorities. This site will signpost parents, neighbours and professionals to places they can gain information and support, and provide links to where professional training for both individuals and professional teams can be accessed. 
+The ‘Help to PREVENT Hate!’ is a website for people to keep our country and communities in the UK safe from those that target vulnerable individuals by spreading hate and negative ideologies and cause fear in our communities. This site is for parents, concerned citizens and professionals working with vulnerable groups who want to keep their communities safe from hate and terrorism. It is for people who want to know more about what the PREVENT strategy is, what to look for and, most importantly, how to report any concerns to the relevant authorities. This site will signpost parents, ncitizens and professionals to places they can gain information and support, and provide links to where professional training for both individuals and professional teams can be accessed. 
+
 
 __Table of Contents__
 -Overview
@@ -54,24 +55,9 @@ Could be presented in the form of a carousel of notes in the header or underneat
 -or-
  videos could be a larger more prominent feature as a secondary page on the site accessible via a link button or the navbar.
 
-__Installation__
-To run this project locally, follow these steps:
-
-Clone the repository:
-
-bash
-git clone https://github.com/your-username/help-to-prevent-hate.git
-Navigate to the project directory:
-
-bash
-cd help-to-prevent-hate
-Open the index.html file in your preferred browser to view the website:
-
-bash
-open index.html
 
 __Usage__
-Once you have the project set up, you can explore the following sections:
+ explore the following sections:
 
 - Families: Learn how to spot signs of radicalization in teenagers and find resources to help.
 - Staying Alert in Crowds: Tips on staying safe at large gatherings and public events.
